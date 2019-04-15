@@ -35,15 +35,22 @@ Route::get('/', function () {
 	Route::get('/create', function () { 
 	echo "Route diakses menggunakan nama"; 
 	})->name('create');
-
-	Route::get('/produk', 'produkController@index'); 
-
-
 	
+	Route::get('/produk', 'produkController@index'); 
+	
+	Route::get('/produk/show', 'produkController@show'); 
+
 	
 	
 	route::get('penjualan',function ()
 	{
 		return ("Welcome to The AlLaravel");
 	});
+
+		Route::get('/halaman',function(){ 
+	$title = 'Harry Pooter'; 
+	$konten = 'harry potter and the deathly hallows: part 2';
+	return view('konten.halaman',
+	compact('title','konten')); });
+
 	
