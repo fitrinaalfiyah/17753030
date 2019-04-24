@@ -8,13 +8,32 @@ class produkController extends Controller
 {
     public function index() 
 	{ 
-		$produk = 'Aqua 400ML'; 
-		return view('produk/index',compact('produk')); 
+		$produk = ['Meja','Kursi','Buku','Lampu']; 
+		return view('produk.index',compact('produk')); 
 	}
 	
-	public function show() 
+	public function create() 
 	{ 
-		$produk = ['Aqua 115 ML','Minuman Bersoda','Buku Sejarah','Mouse','CPU']; 
-		return view('produk/show',compact('produk')); 
+		//
 	} 
+	public function store(Request $request) 
+	{ 
+		//
+	} 
+	public function show($id) 
+	{ 
+		//
+	} 
+	public function edit($id) 
+	{ 
+		//
+	} 
+	public function update(Request $request, $id) 
+	{ 
+		//
+	} 
+	public function destroy($id) 
+	{ 
+		//
+	}  
 }

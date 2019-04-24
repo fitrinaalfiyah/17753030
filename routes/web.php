@@ -11,9 +11,22 @@
 |
 */
 
-Route::get('/', function () {
+	Route::resource('produk','produkController');
+
+
+
+
+	Route::get('/pelanggan', 'pelangganController@index'); 
+ 
+
+
+
+
+
+
+	Route::get('/', function () {
     return view('welcome');
-});
+	});
 
 	Route::get('/show/{id}', function ($id) { 
 	echo "Nilai Parameter Adalah ".$id; 
@@ -38,6 +51,7 @@ Route::get('/', function () {
 	
 	Route::get('/produk', 'produkController@index'); 
 	
+	
 	Route::get('/produk/show', 'produkController@show'); 
 
 	
@@ -52,5 +66,7 @@ Route::get('/', function () {
 	$konten = 'harry potter and the deathly hallows: part 2';
 	return view('konten.halaman',
 	compact('title','konten')); });
+	
+	
 
 	

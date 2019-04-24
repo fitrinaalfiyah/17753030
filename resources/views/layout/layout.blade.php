@@ -1,7 +1,7 @@
 <html> 
 	<head> 
 		<title>@yield('title')</title> 
-		<link rel="stylesheet" href="{!! asset ('css/al.css') !!}" media="screen">
+		<link rel="stylesheet" href="{!! asset ('css/a.css') !!}" media="screen">
 	</head> 
 <body> 
 	<header> 

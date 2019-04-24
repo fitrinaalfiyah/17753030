@@ -1,0 +1,24 @@
+html { 
+  background-color: pink; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+body{
+  padding:0;
+  margin:0;
+}
+
+h1{
+  font-family: bbeauty;
+}
+
+
+.box{
+	background: grey;
+	padding : 10px;
+	color : white;
+}
